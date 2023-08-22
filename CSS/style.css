@@ -1,0 +1,153 @@
+:root {
+      --Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+      --Pale-Blue: hsl(243, 100%, 93%);
+      --Grayish-Blue: hsl(229, 7%, 55%);
+      --Dark-Blue: hsl(228, 56%, 26%);
+      --Very-Dark-Blue: hsl(229, 57%, 11%);
+
+      --border-radius:10px
+}
+html {
+    font-size: 62.5%;
+    font-family:Raleway;
+    color: white;
+}
+
+body {
+    background-image: url(../images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 50%;
+    background-color: var(--Very-Dark-Blue);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    column-gap: 2rem;
+}
+
+.label-box {
+    background-color: var(--Dark-Blue);
+    border-radius: var(--border-radius) 107px var(--border-radius) var(--border-radius);
+    padding: 4rem;
+    width: 24rem;
+}
+
+.main-box {
+    background-color: var(--Dark-Blue);
+    border-radius: var(--border-radius);
+    padding: 2.7rem 3rem 2rem 3.5rem;
+    height: 15.5rem;
+    align-self: end;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.info {
+    color: var(--Pale-Blue);
+}
+
+.info span {
+    color: #fff;
+    font-weight: 600;
+}
+
+.logo {
+    margin: 0 0 2rem 0;
+}
+
+.icons {
+    display: flex;
+    width: 5px;
+}
+
+.icon-bg {
+    padding: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Very-Dark-Blue);
+    border-radius: var(--border-radius);
+    margin: 0.5rem;
+}
+
+
+.size-container {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.radar-container {
+    background-color: var(--Very-Dark-Blue);
+    width: 100%;
+    height: 16.5px;
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+}
+
+.radar {
+    width: 80%;
+    height: 75%;
+    border-radius: var(--border-radius);
+    background: linear-gradient(90deg,  hsl(6, 100%, 80%) ,hsl(335, 100%, 65%)); 
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-left: 0.2rem;
+}
+
+.period {
+    margin-right: 2px;
+    width: 9px;
+    height: 9px;
+    background-color: white;
+    border-radius: 50%;
+}
+.message {
+    position: absolute;
+    top: -40px;
+    right: 45px;
+    background-color: #fff;
+    color: var(--Grayish-Blue);
+    border-radius: 7px 7px 0 7px;
+    padding: 0 1rem;
+    width: 16rem;
+    box-sizing: border-box;
+    white-space: nowrap;
+    font-weight: bold;
+    height: 6rem;
+    display: flex;
+}
+
+.message p {
+    margin: 10px 0 0 5px;
+}
+.message::after {
+    content: " ";
+    position: absolute;
+    right: 0px;
+    bottom: -19px; 
+    border-top: 30px solid #fff;
+    border-right: 0px solid transparent; 
+    border-left: 32px solid transparent;
+    border-bottom: none;
+}
+.message span {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: black;
+    margin-right: 0.7rem;
+}
+
+.gb-left {
+    margin-top: 25px;
+}
