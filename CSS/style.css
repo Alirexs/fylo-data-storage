@@ -29,8 +29,16 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 0.5fr 1.5fr;
-    column-gap: 2rem;
+    grid-template-columns: 0.5fr;
+    row-gap: 2rem;
+}
+
+@media screen and (min-width: 769px) {
+    .container {
+        display: grid;
+        grid-template-columns: 0.5fr 1.5fr;
+        column-gap: 2.5rem;
+    }
 }
 
 .label-box {
@@ -105,14 +113,14 @@ body {
     margin-left: 0.2rem;
 }
 
-.period {
+.dot {
     margin-right: 2px;
     width: 9px;
     height: 9px;
     background-color: white;
     border-radius: 50%;
 }
-.message {
+.message-box {
     position: absolute;
     top: -40px;
     right: 45px;
@@ -126,12 +134,13 @@ body {
     font-weight: bold;
     height: 6rem;
     display: flex;
+    font-size: 12px;
 }
 
-.message p {
+.message-box p {
     margin: 10px 0 0 5px;
 }
-.message::after {
+.message-box::after {
     content: " ";
     position: absolute;
     right: 0px;
@@ -141,7 +150,7 @@ body {
     border-left: 32px solid transparent;
     border-bottom: none;
 }
-.message span {
+.message-box span {
     font-size: 3.5rem;
     font-weight: bold;
     color: black;
@@ -150,4 +159,21 @@ body {
 
 .gb-left {
     margin-top: 25px;
+}
+
+@media screen and (max-width: 769px) {
+    .message-box::after {
+        display: none;
+    }
+
+    .message-box {
+        top: 123px;
+        right: 80px;
+        border-radius: 7px;
+    }
+
+    .main-box {
+        text-align: center;
+        padding-top: 1.7rem;
+    }
 }
