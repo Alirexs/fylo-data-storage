@@ -29,7 +29,6 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 0.5fr;
     row-gap: 2rem;
 }
 
@@ -45,7 +44,7 @@ body {
     background-color: var(--Dark-Blue);
     border-radius: var(--border-radius) 107px var(--border-radius) var(--border-radius);
     padding: 4rem;
-    width: 24rem;
+    width: 27rem;
 }
 
 .main-box {
@@ -64,7 +63,7 @@ body {
 
 .info span {
     color: #fff;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .logo {
@@ -90,7 +89,7 @@ body {
 .size-container {
     display: flex;
     justify-content: space-between;
-    font-weight: 600;
+    font-size: 12px;
 }
 
 .radar-container {
@@ -127,14 +126,14 @@ body {
     background-color: #fff;
     color: var(--Grayish-Blue);
     border-radius: 7px 7px 0 7px;
-    padding: 0 1rem;
+    padding: 0.2rem 1rem;
     width: 16rem;
-    box-sizing: border-box;
     white-space: nowrap;
     font-weight: bold;
     height: 6rem;
     display: flex;
     font-size: 12px;
+    justify-content: center;
 }
 
 .message-box p {
